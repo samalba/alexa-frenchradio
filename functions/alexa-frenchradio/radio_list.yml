@@ -1,0 +1,41 @@
+France Info:
+    uterrances:
+        - france info
+    url: https://direct.franceinfo.fr/live/franceinfo-midfi.mp3
+
+France Inter:
+    uterrances:
+        - france inter
+    url: https://direct.franceinter.fr/live/franceinter-midfi.mp3
+
+France Musique:
+    uterrances:
+        - france musique
+        - france music
+    url: https://direct.francemusique.fr/live/francemusique-midfi.mp3
+
+France Culture:
+    uterrances:
+        - france culture
+    url: https://direct.franceculture.fr/live/franceculture-midfi.mp3
+
+FIP:
+    uterrances:
+        - fip
+        - feep
+    url: https://direct.fipradio.fr/live/fip-midfi.mp3
+
+Mouv:
+    uterrances:
+        - mouv
+        - move
+        - moov
+    url: https://direct.mouv.fr/live/mouv-midfi.mp3
+
+France Bleu Paris:
+    uterrances:
+        - france bleu
+        - france blue
+    url: https://direct.francebleu.fr/live/fb1071-midfi.mp3
+
+

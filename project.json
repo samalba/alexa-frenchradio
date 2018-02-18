@@ -1,0 +1,9 @@
+{
+  "name": "alexa-frenchradio",
+  "description": "Alexa Skill that enables listening to french radios",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::201736817473:role/alexa-frenchradio_lambda_function",
+  "environment": {},
+  "runtime": "python3.6"
+}

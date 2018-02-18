@@ -1,0 +1,6 @@
+{
+  "description": "Main AWS Lambda function that implement the Alexa skill French Radio",
+  "hooks":{
+    "build": "pip install -r requirements.txt -t ."
+  }
+}
