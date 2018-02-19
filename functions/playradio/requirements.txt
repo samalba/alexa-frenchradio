@@ -4,7 +4,8 @@ cffi==1.11.4
 click==6.7
 cryptography==2.1.4
 Flask==0.12.1
-Flask-Ask==0.9.7
+# -e git://github.com/samalba/flask-ask.git@f10cbec00a215be4ed93839adccd365b0232c177#egg=Flask_Ask
+git+https://github.com/samalba/flask-ask.git@f10cbec00a215be4ed93839adccd365b0232c177#egg=Flask_Ask
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
