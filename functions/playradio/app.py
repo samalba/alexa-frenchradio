@@ -39,7 +39,7 @@ def play_radio(radioname):
     radio = find_radio(radioname)
     if not radio:
         logger.info('PlayRadioIntent: Cannot find radio {}'.format(radioname))
-        return audio('Sorry, I cannot play the radio {}'.format(radioname))
+        return audio('Sorry, I cannot find the radio {}'.format(radioname))
     (radio, info) = radio
     speech = 'Playing the radio {}'.format(radio)
     return audio(speech).play(info['url'])
@@ -52,12 +52,12 @@ def pause():
 
 @ask.intent('AMAZON.ResumeIntent')
 def resume():
-    return audio('Resuming.').resume()
+    return audio().resume()
 
 
 @ask.intent('AMAZON.StopIntent')
 def stop():
-    return audio('Stopping.').clear_queue(stop=True)
+    return audio().clear_queue(stop=True)
 
 
 @ask.session_ended
