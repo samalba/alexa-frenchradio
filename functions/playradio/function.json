@@ -1,6 +1,8 @@
 {
   "description": "Main AWS Lambda function that implement the Alexa skill French Radio",
+  "handler": "app.lambda_handler",
   "hooks":{
-    "build": "pip install -r requirements.txt -t ."
+    "build": "pip install -r requirements.txt -t .",
+    "clean": "git ls-files --directory --others --exclude-standard | xargs rm -rf"
   }
 }
