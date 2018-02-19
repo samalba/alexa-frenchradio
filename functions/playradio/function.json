@@ -2,7 +2,7 @@
   "description": "Main AWS Lambda function that implement the Alexa skill French Radio",
   "handler": "app.lambda_handler",
   "hooks":{
-    "build": "pip install -r requirements.txt -t .",
-    "clean": "git ls-files --directory --others --exclude-standard | xargs rm -rf"
+    "build": "docker run -v $(pwd):/build --rm -w /build python:3.6 pip install -r requirements.txt -t .",
+    "clean": "git ls-files --directory --others --exclude-standard | xargs rm -rf ; rm -rf __pycache__ *.egg-info ; rm -f *.so"
   }
 }
