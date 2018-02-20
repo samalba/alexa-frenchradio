@@ -1,0 +1,10 @@
+This service allows to use URL like:
+
+https://gcloud.zaphod.us/__proxy__/ais.rtl.fr:80/rtl-1-44-128
+
+In this example, the domain ais.rtl.fr is only available in http.
+The Alexa service requires audio URL in https only.
+
+The current service lives on a google cloud VM at gcloud.zaphod.us.
+
+Each proxied URL requires to start with https://gcloud.zaphod.us/__proxy__/
