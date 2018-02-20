@@ -38,4 +38,15 @@ France Bleu Paris:
         - france blue
     url: https://direct.francebleu.fr/live/fb1071-midfi.mp3
 
+RTL:
+    uterrances:
+        - rtl
+        - r.t.l.
+    url: https://gcloud.zaphod.us/__proxy__/ais.rtl.fr:80/rtl-1-44-128
 
+RTL 2:
+    uterrances:
+        - rtl 2
+        - rtl two
+        - r.t.l. two
+    url: https://gcloud.zaphod.us/__proxy__/ais.rtl.fr:80/rtl2-1-44-128
