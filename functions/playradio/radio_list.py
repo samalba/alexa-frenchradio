@@ -46,19 +46,19 @@ data = {
         'uterrances': ['virgin', 'virgin radio']
     },
     'RMC': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/rmc.scdn.arkena.com/rmc.mp3',
+        'url': 'https://rmc.bfmtv.com/rmcinfo-mp3',
         'uterrances': ['rmc', 'all mc', 'r.m.c.']
     },
     'Jazz Radio': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/rmc.scdn.arkena.com/rmc.mp3',
+        'url': 'https://gcloud.zaphod.us/__proxy__/icepe11.infomaniak.ch:80/jazzradio-high.mp3',
         'uterrances': ['jazz radio', 'jazz']
     },
     'NRJ': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3?origine=listenlive',
+        'url': 'http://cdn.nrjaudio.fm/audio1/fr/40050/mp3_128.mp3',
         'uterrances': ['nrj', 'n.r.j.', 'energy']
     },
     'Cherie FM': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/cdn.nrjaudio.fm/audio1/fr/30201/mp3_128.mp3?origine=listenlive',
+        'url': 'https://cdn.nrjaudio.fm/audio1/fr/40104/mp3_128.mp3',
         'uterrances': ['cherry', 'cherry fm', 'cherie', 'cherry fm']
     },
     'RFM': {
@@ -66,7 +66,7 @@ data = {
         'uterrances': ['r.f.m.', 'rfm']
     },
     'Rire et Chanson': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/cdn.nrjaudio.fm/audio1/fr/30401/mp3_128.mp3?origine=listenlive',
+        'url': 'http://cdn.nrjaudio.fm/audio1/fr/40105/mp3_128.mp3',
         'uterrances': ['rire et chanson', 'ree and chanson', 'ree et chanson', 'laugh and song']
     },
     'Skyrock': {
@@ -74,11 +74,11 @@ data = {
         'uterrances': ['skyrock']
     },
     'Fun Radio': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/ais.rtl.fr:80/fun-1-44-128',
+        'url': 'https://gcloud.zaphod.us/__proxy__/streaming.radio.funradio.fr/fun-1-44-128',
         'uterrances': ['fun radio', 'fun']
     },
     'Nostalgie': {
-        'url': 'https://gcloud.zaphod.us/__proxy__/cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=listenlive',
+        'url': 'https://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=fluxradios',
         'uterrances': ['nostalgy', 'nostalgie']
     },
     'RFI': {
