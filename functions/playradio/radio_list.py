@@ -39,7 +39,7 @@ data = {
     },
     'Europe 1': {
         'url': 'https://gcloud.zaphod.us/__proxy__/mp3lg4.tdf-cdn.com/9240/lag_180945.mp3',
-        'uterrances': ['europe 1', 'europe one', 'europe1']
+        'uterrances': ['europe 1', 'europe one', 'europe1', 'europe']
     },
     'Virgin Radio': {
         'url': 'https://gcloud.zaphod.us/__proxy__/mp3lg4.tdf-cdn.com/9243/lag_164753.mp3',
