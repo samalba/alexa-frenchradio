@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 
 import logging
-import time
-import pprint
-import json
 
-from flask import Flask, request
+from flask import Flask
 from flask_ask import Ask, question, audio, session, statement, \
         current_stream, logger
 
@@ -52,39 +49,21 @@ def play_radio(radioname):
     return resp
 
 
-@ask.intent('AMAZON.PauseIntent')
-def pause():
-    return audio().stop()
-
-
 @ask.intent('AMAZON.ResumeIntent')
+@ask.intent('AMAZON.StartOverIntent')
 def resume():
     return audio('Resuming.').play(current_stream.url)
 
 
 @ask.intent('AMAZON.StopIntent')
+@ask.intent('AMAZON.PauseIntent')
 def stop():
     return audio().clear_queue(stop=True)
-
-
-@ask.intent('AMAZON.StartOverIntent')
-def startover():
-    return audio('Resuming.').play(current_stream.url)
 
 
 @ask.on_playback_started()
 def started(offset, token, url):
     logger.info('Started to play {}; offset: {}'.format(url, offset))
-    return "{}", 200
-
-
-@ask.on_playback_nearly_finished()
-def nearly_finished():
-    return "{}", 200
-
-
-@ask.on_playback_stopped()
-def stopped(offset, token):
     return "{}", 200
 
 
@@ -104,26 +83,6 @@ def session_ended():
     return "{}", 200
 
 
-@app.after_request
-def after_request(response):
-    if response.status_code == 200:
-        return response
-    ts = time.strftime('[%Y-%b-%d %H:%M]')
-    data = json.loads(request.data)
-    logger.error('###########\nREQUEST {} {} {} {} {} {} \nBODY: {}'.format(
-                  ts,
-                  request.remote_addr,
-                  request.method,
-                  request.scheme,
-                  request.full_path,
-                  response.status,
-                  pprint.pformat(data)))
-    logger.error('###\nRESPONSE {} \nBODY: {} \n###########'.format(
-                 response.status,
-                 response.data))
-    return response
-
-
 def lambda_handler(event, _context):
     """AWS Lambda entrypoint
     arn:aws:lambda:us-west-2:201736817473:function:alexa-frenchradio_playradio
@@ -134,4 +93,4 @@ def lambda_handler(event, _context):
 if __name__ == '__main__':
     # Used for debug only
     app.config['ASK_VERIFY_REQUESTS'] = False
-    app.run(host='0.0.0.0', port=1080)
+    app.run(port=1080)

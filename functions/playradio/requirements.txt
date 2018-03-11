@@ -4,8 +4,7 @@ cffi==1.11.4
 click==6.7
 cryptography==2.1.4
 Flask==0.12.1
-# -e git://github.com/samalba/flask-ask.git@f10cbec00a215be4ed93839adccd365b0232c177#egg=Flask_Ask
-git+https://github.com/samalba/flask-ask.git@f10cbec00a215be4ed93839adccd365b0232c177#egg=Flask_Ask
+git+https://github.com/johnwheeler/flask-ask.git@875f509d3ff3cef99d88694e5ba592e5cb1df9dc#egg=Flask_Ask
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
@@ -14,5 +13,5 @@ pycparser==2.18
 pyOpenSSL==17.0.0
 python-dateutil==2.6.1
 PyYAML==3.12
-six==1.10.0
+six==1.11.0
 Werkzeug==0.14.1
