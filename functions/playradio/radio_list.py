@@ -54,7 +54,7 @@ data = {
         'uterrances': ['jazz radio', 'jazz']
     },
     'NRJ': {
-        'url': 'http://cdn.nrjaudio.fm/audio1/fr/40050/mp3_128.mp3',
+        'url': 'https://cdn.nrjaudio.fm/audio1/fr/40050/mp3_128.mp3',
         'uterrances': ['nrj', 'n.r.j.', 'energy']
     },
     'Cherie FM': {
@@ -78,7 +78,7 @@ data = {
         'uterrances': ['fun radio', 'fun']
     },
     'Nostalgie': {
-        'url': 'https://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3?origine=fluxradios',
+        'url': 'https://cdn.nrjaudio.fm/audio1/fr/30601/mp3_128.mp3',
         'uterrances': ['nostalgy', 'nostalgie']
     },
     'RFI': {

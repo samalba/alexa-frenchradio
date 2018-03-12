@@ -42,7 +42,8 @@ def play_radio(radioname):
     radio = find_radio(radioname)
     if not radio:
         logger.info('PlayRadioIntent: Cannot find radio {}'.format(radioname))
-        return statement('Sorry, I cannot find the radio {}'.format(radioname))
+        msg = 'Sorry, I cannot find the radio {}'.format(radioname)
+        return statement(msg).simple_card('French Radio', msg)
     (radio, info) = radio
     msg = 'Playing {}'.format(radio)
     resp = audio(msg).play(info['url']).simple_card(msg)
