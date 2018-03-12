@@ -66,7 +66,7 @@ data = {
         'uterrances': ['r.f.m.', 'rfm']
     },
     'Rire et Chanson': {
-        'url': 'http://cdn.nrjaudio.fm/audio1/fr/40105/mp3_128.mp3',
+        'url': 'https://cdn.nrjaudio.fm/audio1/fr/40105/mp3_128.mp3',
         'uterrances': ['rire et chanson', 'ree and chanson', 'ree et chanson', 'laugh and song']
     },
     'Skyrock': {
